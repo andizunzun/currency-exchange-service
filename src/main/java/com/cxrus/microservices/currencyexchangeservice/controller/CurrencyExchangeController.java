@@ -31,6 +31,7 @@ public class CurrencyExchangeController {
 		
 		exchangeValue.setPort(
 				Integer.parseInt(environment.getProperty("local.server.port")));
+		exchangeValue.setIpAddress(environment.getProperty("server.address"));
 		logger.info("{}", exchangeValue);
 		
 		return exchangeValue;

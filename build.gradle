@@ -22,17 +22,6 @@ ext {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.cloud:spring-cloud-starter-config'
-	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
-	implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
-	
-	compile group: 'org.springframework.amqp', name: 'spring-rabbit', version: '2.1.6.RELEASE'
-	
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-		exclude group: 'junit', module: 'junit'
-	}
 	runtime 'com.h2database:h2'
 }
 
